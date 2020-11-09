@@ -64,19 +64,39 @@ public class App {
         tropgrande.test(bob);
         tropgrande.test(lea);
 
+        Predicate<Paire<Integer,Double>> troplourd = p -> p.snd>150.0;
+        troplourd.test(micheal);
 
-        Predicate <Boolean> tailleincorrect = (int x) -> {
-             rtr;
+
+        Predicate <Boolean> tailleincorrect = (p ) -> {
+             Boolean rtr=false;
             tropgrande.and(tropgrande);
 
 
             return rtr;
         };
 
-        Predicate<Paire<Integer,Double>> troplourd = p -> p.snd>150.0;
 
-        troplourd.test(micheal);
 
+        Predicate<Boolean> poidsCorrect = (p) -> {
+            Boolean rtr=true;
+
+            troppetit.and(tropgrande);
+
+
+
+            return  rtr;
+        };
+
+        Predicate<Boolean> accesAutorise = (p) -> {
+            Boolean rtr=false;
+
+            tailleincorrect.and(poidsCorrect);
+
+
+
+            return  rtr;
+        };
 
 
     }
