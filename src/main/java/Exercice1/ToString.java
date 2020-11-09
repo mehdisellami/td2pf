@@ -1,2 +1,9 @@
-package Exercice1;public interface ToString {
+package Exercice1;
+
+@FunctionalInterface
+
+public interface ToString <T> {
+
+
+
 }
