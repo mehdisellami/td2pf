@@ -4,6 +4,9 @@
 package src;
 
 import Exercice1.Somme;
+import Exercice2.Paire;
+
+import java.util.function.Predicate;
 
 public class App {
 
@@ -37,13 +40,51 @@ public class App {
             public Long somme(Long var1, Long var2) {
                 return var1+var2;
             }
-        }
+        };
     }
 
 
 
+    public static void exo2_question1(){
+
+        Paire<Integer,Integer> bob = new Paire<>(80,120);
+        Paire<Integer,Integer> Cla = new Paire<>(101,120);
+        Paire<Integer,Integer> lea = new Paire<>(201,120);
+
+        Paire<Integer,Double> micheal = new Paire<>(150,220.0);
+
+
+        Predicate<Paire<Integer,Integer>> troppetit = p -> p.fst<100;
+        troppetit.test(bob);
+        troppetit.test(Cla);
+
+
+        Predicate<Paire<Integer,Integer>> tropgrande = p -> p.fst>200;
+
+        tropgrande.test(bob);
+        tropgrande.test(lea);
+
+
+        Predicate <Boolean> tailleincorrect = (int x) -> {
+             rtr;
+            tropgrande.and(tropgrande);
+
+
+            return rtr;
+        };
+
+        Predicate<Paire<Integer,Double>> troplourd = p -> p.snd>150.0;
+
+        troplourd.test(micheal);
+
+
+
+    }
+
 
     public static void main(String[] args) {
+        question1_1();
+        exo2_question1();
         System.out.println();
     }
 }

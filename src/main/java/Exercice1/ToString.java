@@ -4,6 +4,6 @@ package Exercice1;
 
 public interface ToString <T> {
 
-
+          T convert(T var);
 
 }
